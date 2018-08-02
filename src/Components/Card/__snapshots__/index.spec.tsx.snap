@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Snapshot 1`] = `
+<Card
+  age={300}
+  name="Morder"
+  profesion="FrontEnd"
+>
+  <styled.div>
+    <div
+      className="sc-bdVaJa esnomH"
+    >
+      <p>
+        Name: 
+        Morder
+      </p>
+      <p>
+        Age: 
+        300
+      </p>
+      <p>
+        Profesion: 
+        FrontEnd
+      </p>
+    </div>
+  </styled.div>
+</Card>
+`;

@@ -1,0 +1,95 @@
+#!/usr/bin/env groovy
+
+pipeline {
+  agent any
+  options {
+    ansiColor('xterm')
+  }
+  environment {
+    DEPLOY_BUCKET = 'cds.aptitus.g3c.pe'
+  }
+  stages {
+    stage('Sync credentials') {
+      steps {
+        script {
+          def getBaseEnvironment = { branch ->
+            if (branch.indexOf('dev') == 0) { return 'dev'}
+            if (branch.indexOf('pre') == 0) { return 'pre'}
+            return branch
+          }
+          ENVIRONMENT = getBaseEnvironment("${GIT_BRANCH}");
+          withEnv(["ENVIRONMENT=${ENVIRONMENT}", "GIT_BRANCH=${GIT_BRANCH}"]) {
+            echo 'Synchronizing..'
+            sh 'make sync-credentials'
+            sh 'make sync-config'
+          }
+        }
+      }
+    }
+    stage('Install dependencies') {
+      steps {
+        script {
+          def getDockerRegion = { env ->
+            if (env == 'dev') { return "eu-west-1" }
+            if (env == 'pre') { return "us-west-2" }
+            if (env == 'prod') { return "us-east-1" }
+          }
+          AWS_REGION = getDockerRegion("${ENVIRONMENT}")
+          withEnv(["AWS_REGION=${AWS_REGION}", "ENVIRONMENT=${ENVIRONMENT}"]) {
+            echo 'Installing..'
+            sh 'make install'
+          }
+        }
+      }
+    }
+    stage('Build') {
+      steps {
+        script {
+          withEnv(["AWS_REGION=${AWS_REGION}", "ENVIRONMENT=${ENVIRONMENT}"]) {
+            echo 'Building..'
+            sh 'make build'
+          }
+        }
+      }
+    }
+    stage('Tests') {
+      steps {
+        withEnv(["AWS_REGION=${AWS_REGION}", "ENVIRONMENT=${ENVIRONMENT}", "JEST_JUNIT_OUTPUT=./test-results.xml"]) {
+          echo 'Testing..'
+          sh 'make test'
+        }
+        junit 'test-results.xml'
+      }
+    }
+    stage('Sync cds') {
+      steps {
+        script {
+          def getServer = { env ->
+            if (env == 'dev') { return 'v1s30w28' }
+            if (env == 'pre') { return 'v3s30w28' }
+          }
+          def getDeployBucket = { branch ->
+            if (branch != 'prod') { return branch + '.' + DEPLOY_BUCKET }
+            return DEPLOY_BUCKET
+          }
+          DEPLOY_BUCKET = getDeployBucket("${GIT_BRANCH}")
+          SERVERS = getServer("${ENVIRONMENT}")
+          withEnv(["ENVIRONMENT=${ENVIRONMENT}", "SERVERS=${SERVERS}", "DEPLOY_BUCKET=${DEPLOY_BUCKET}"]) {
+            echo 'Deploying..'
+            sh 'make sync-cds'
+          }
+        }
+      }
+    }
+  }
+  post {
+    always {
+      echo 'Deleting workspace..'
+      sh 'sudo chown -R $(id -u):$(id -g) ${WORKSPACE}'
+      deleteDir()
+    }
+    failure {
+      echo 'Hubo un error ...'
+    }
+  }
+}

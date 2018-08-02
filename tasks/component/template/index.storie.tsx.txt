@@ -1,0 +1,21 @@
+import * as React from 'react';
+import { withDocs }  from 'storybook-readme';
+import { {{NAME}} } from '@app/src/Components/{{NAME}}';
+import { widthPropTypes } from '@app/.storybook/Containers/widthPropTypes';
+import * as readme from './index.md';
+
+const Wrapper = () => (
+    <div>
+        <{{NAME}} name="inpt-name" />
+    </div>
+);
+
+export default ()=>{
+    return withDocs(
+        readme,
+        widthPropTypes({
+            Component: {{NAME}},
+            RenderComponent: Wrapper
+        })
+    )
+}

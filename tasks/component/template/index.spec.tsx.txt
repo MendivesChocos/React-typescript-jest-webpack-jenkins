@@ -1,0 +1,13 @@
+import * as React from 'react';
+import * as Enzyme from 'enzyme';
+import { mount } from 'enzyme';
+import * as Adapter from 'enzyme-adapter-react-16';
+
+import { {{NAME}} } from './';
+
+Enzyme.configure({ adapter: new Adapter() });
+
+it('Textarea basic Snapshot', () => {
+    const component = mount(<{{NAME}} name="inpt-name" />);
+    expect(component).toMatchSnapshot();
+});

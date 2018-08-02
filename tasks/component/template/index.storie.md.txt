@@ -1,0 +1,14 @@
+# {{NAME}}
+
+Importacion del componente {{NAME}}.
+```js
+import { {{NAME}} } from '@app/src/Components/{{NAME}}';
+```
+
+Uso básico del componente
+```js
+<{{NAME}} name="inpt-name" />
+```
+
+<!-- STORY -->
+

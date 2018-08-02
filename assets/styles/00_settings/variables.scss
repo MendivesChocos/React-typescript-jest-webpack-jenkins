@@ -1,0 +1,19 @@
+/* Paths */
+$imgPath : "./images/";
+$fontPath: "./fonts/";
+
+/* font family variables */
+$museoFamily  : "museo" ,"arial", "sans-serif";
+$sansFamily   : "museoSans" ,"arial", "sans-serif";
+
+/* Colors */
+$firstColor        : #111111;
+$firstColorHover   : darken($firstColor, 30%);
+$secondColor       : #7a7979;
+$titleColor        : #333;
+$errorBgColor      : #fcdddd;
+$errorBorderColor  : #fc7d7d;
+
+/* Breakpoints */
+$mobile: max-width 414px;
+$tablet: 414px 1050px;

@@ -1,0 +1,91 @@
+@font-face{
+    font-family:Icons-webfont;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/Icons-webfont/Icons-webfont.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/Icons-webfont/Icons-webfont.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/Icons-webfont/Icons-webfont.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/Icons-webfont/Icons-webfont.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/Icons-webfont/Icons-webfont.svg?v=d18cfde#Icons-webfont) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:bariol-regular;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/bariol-regular/bariol-regular.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/bariol-regular/bariol-regular.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/bariol-regular/bariol-regular.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/bariol-regular/bariol-regular.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/bariol-regular/bariol-regular.svg?v=d18cfde#bariol-regular) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:gotham;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham/gotham.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham/gotham.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham/gotham.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham/gotham.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham/gotham.svg?v=d18cfde#gotham) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:gotham-bold;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-bold/gotham-bold.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-bold/gotham-bold.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-bold/gotham-bold.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-bold/gotham-bold.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-bold/gotham-bold.svg?v=d18cfde#gotham-bold) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:gotham-book;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book/gotham-book.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book/gotham-book.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book/gotham-book.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book/gotham-book.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book/gotham-book.svg?v=d18cfde#gotham-book) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:gotham-book-light;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book-light/gotham-book-light.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book-light/gotham-book-light.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book-light/gotham-book-light.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book-light/gotham-book-light.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-book-light/gotham-book-light.svg?v=d18cfde#gotham-book-light) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:gotham-medium;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-medium/gotham-medium.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-medium/gotham-medium.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-medium/gotham-medium.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-medium/gotham-medium.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/gotham-medium/gotham-medium.svg?v=d18cfde#gotham-medium) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:iconFonts;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/iconFonts/iconFonts.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/iconFonts/iconFonts.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/iconFonts/iconFonts.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/iconFonts/iconFonts.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/iconFonts/iconFonts.svg?v=d18cfde#iconFonts) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:indiepimptbs;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/indiepimptbs/indiepimptbs.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/indiepimptbs/indiepimptbs.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/indiepimptbs/indiepimptbs.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/indiepimptbs/indiepimptbs.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/indiepimptbs/indiepimptbs.svg?v=d18cfde#indiepimptbs) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:montserrat-bold;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-bold/montserrat-bold.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-bold/montserrat-bold.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-bold/montserrat-bold.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-bold/montserrat-bold.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-bold/montserrat-bold.svg?v=d18cfde#montserrat-bold) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:montserrat-regular;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-regular/montserrat-regular.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-regular/montserrat-regular.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-regular/montserrat-regular.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-regular/montserrat-regular.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/montserrat-regular/montserrat-regular.svg?v=d18cfde#montserrat-regular) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:omnes-regular;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-regular/omnes-regular.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-regular/omnes-regular.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-regular/omnes-regular.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-regular/omnes-regular.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-regular/omnes-regular.svg?v=d18cfde#omnes-regular) format("svg");
+    font-style:normal;
+    font-weight:400
+}
+@font-face{
+    font-family:omnes-semibold;
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-semibold/omnes-semibold.eot?v=d18cfde);
+    src:url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-semibold/omnes-semibold.eot?#iefix) format("embedded-opentype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-semibold/omnes-semibold.woff?v=d18cfde) format("woff"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-semibold/omnes-semibold.ttf?v=d18cfde) format("truetype"),url(https://pre.cds.urbania.g3c.pe/atomic/fonts/omnes-semibold/omnes-semibold.svg?v=d18cfde#omnes-semibold) format("svg");
+    font-style:normal;
+    font-weight:400
+}

@@ -1,0 +1,18 @@
+import * as React from 'react';
+import * as PropTypes from 'prop-types';
+
+interface Props {
+    name?: string;
+}
+
+const {{NAME}}: React.SFC<Props> = ({ name }) => (
+    <div>
+        <p>Name: {name}</p>
+    </div>
+)
+
+{{NAME}}.propTypes =  {
+    name: PropTypes.string
+}
+
+export { {{NAME}} }

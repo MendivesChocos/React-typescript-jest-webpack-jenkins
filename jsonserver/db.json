@@ -1,0 +1,210 @@
+{
+  "projectType": [
+    {
+      "data": [
+        {
+          "idParent": null,
+          "level": 1,
+          "state": 1,
+          "id": 1,
+          "name": "Residencial"
+        },
+        {
+          "idParent": null,
+          "level": 1,
+          "state": 1,
+          "id": 15,
+          "name": "Comercial"
+        },
+        {
+          "idParent": null,
+          "level": 1,
+          "state": 1,
+          "id": 18,
+          "name": "Lotes"
+        }
+      ],
+      "message": "SUCCESS",
+      "error": false,
+      "code": 2000
+    }
+  ],
+  "projectStatus": [
+    {
+      "data": [
+        {
+          "type": 1,
+          "alias": "pre-venta",
+          "state": 1,
+          "id": 1,
+          "name": "En Pre-venta"
+        },
+        {
+          "type": 1,
+          "alias": "construccion",
+          "state": 1,
+          "id": 2,
+          "name": "En Construcción"
+        },
+        {
+          "type": 1,
+          "alias": "estreno",
+          "state": 1,
+          "id": 3,
+          "name": "En Estreno"
+        }
+      ],
+      "message": "SUCCESS",
+      "error": false,
+      "code": 2000
+    }
+  ],
+
+  "projectBank":[
+    {
+      "data": [
+        {
+          "abbreviation": null,
+          "id": 1,
+          "logo": null,
+          "state": 1,
+          "name": "Banco de comercio"
+        },
+        {
+          "abbreviation": null,
+          "id": 2,
+          "logo": null,
+          "state": 1,
+          "name": "Banco de Crédito"
+        },
+        {
+          "abbreviation": null,
+          "id": 3,
+          "logo": null,
+          "state": 1,
+          "name": "Banco de la Nación"
+        },
+        {
+          "abbreviation": null,
+          "id": 4,
+          "logo": null,
+          "state": 1,
+          "name": "BCP"
+        }
+      ],
+      "message": "SUCCESS",
+      "error": false,
+      "code": 2000
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "tmp_name": "demo"
+    }
+  ],
+  "projectDepartament": [
+    {
+      "id": "1",
+      "name": "LIMA",
+      "alias": "lima",
+      "countryId": "1",
+      "beach": "1",
+      "status": "1"
+    },
+    {
+      "id": "2",
+      "name": "AREQUIPA",
+      "alias": "arequipa",
+      "countryId": "1",
+      "beach": "1",
+      "status": "1"
+    }
+  ],
+  "projectProvince": [
+    {
+      "id": "55",
+      "name": "BARRRANCA",
+      "alias": "barranca",
+      "departmentId": "1",
+      "beach": "1",
+      "status": "1"
+    },
+    {
+      "id": "66",
+      "name": "LIMA",
+      "alias": "lima",
+      "departmentId": "1",
+      "beach": "1",
+      "status": "1"
+    },
+    {
+      "id": "77",
+      "name": "AREQUIPA",
+      "alias": "arequipa",
+      "departmentId": "2",
+      "beach": "1",
+      "status": "1"
+    },
+    {
+      "id": "88",
+      "name": "CAMANA",
+      "alias": "camana",
+      "departmentId": "2",
+      "beach": "1",
+      "status": "1"
+    }
+  ],
+  "projectDistrict": [
+    {
+        "id": "333",
+        "name": "ANCON",
+        "alias": "ancon",
+        "departmentId": "1",
+        "provinceId": "66",
+        "beach": "0",
+        "status": "1"
+    },
+    {
+        "id": "444",
+        "name": "LIMA",
+        "alias": "lima",
+        "departmentId": "1",
+        "provinceId": "66",
+        "beach": "0",
+        "status": "1"
+    }
+  ],
+  "projectUrbanization": [
+    {
+        "id": "6666",
+        "name": "CENTRO DE LIMA",
+        "alias": "centro-lima",
+        "districtId": "333",
+        "status": "1"
+    },
+    {
+        "id": "7777",
+        "name": "ROMA",
+        "alias": "roma",
+        "districtId": "333",
+        "status": "1"
+    }
+  ],
+  "projectBeach": [
+      {
+        "id": "88880",
+        "name": "PLAYA A",
+        "alias": "playa-a",
+        "districtId": "333",
+        "status": "1"
+      },
+      {
+        "id": "99990",
+        "name": "PLAYA B",
+        "alias": "playa-b",
+        "districtId": "333",
+        "status": "1"
+      }
+  ]
+}
